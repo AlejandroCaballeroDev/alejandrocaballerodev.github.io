@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio profesional de Alejandro Caballero Luque, Desarrollador Web Fullstack especializado en Backend (PHP, Symfony, Laravel). DAW.">
+    <meta name="author" content="Alejandro Caballero Luque">
+    <meta name="keywords" content="Alejandro Caballero Luque, Desarrollador Web, Backend, Fullstack, PHP, Symfony, Laravel, DAW, Córdoba, España, Programador">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Alejandro Caballero | Desarrollador Fullstack & Backend">
+    <meta property="og:description" content="Titulado en DAW con experiencia en Symfony, Laravel, React y entornos Docker. Ver mi portfolio y proyectos.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1618477388954-7852f32655ec?q=80&w=600&auto=format&fit=crop">
+
+    <title>Alejandro Caballero Luque | Desarrollador Web Fullstack & Backend</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-theme">
+    <!-- Header / Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-accent">&lt;</span>Alejandro.Caballero<span class="logo-accent">.dev /&gt;</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#about" class="nav-link">Sobre Mí</a></li>
+                    <li><a href="#experience" class="nav-link">Experiencia</a></li>
+                    <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                    <li><a href="#projects" class="nav-link">Proyectos</a></li>
+                    <li><a href="#contact" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Cambiar tema">
+                    <!-- Sun Icon (visible in dark theme) -->
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M12 2v2"></path>
+                        <path d="M12 20v2"></path>
+                        <path d="M4.93 4.93l1.41 1.41"></path>
+                        <path d="M17.66 17.66l1.41 1.41"></path>
+                        <path d="M2 12h2"></path>
+                        <path d="M20 12h2"></path>
+                        <path d="M6.34 17.66l-1.41 1.41"></path>
+                        <path d="M19.07 4.93l-1.41 1.41"></path>
+                    </svg>
+                    <!-- Moon Icon (visible in light theme) -->
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                    </svg>
+                </button>
+                
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Menu de navegación">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-container container">
+                <div class="hero-content fade-in-up">
+                    <div class="badge">Disponible para trabajar</div>
+                    <h1 class="hero-title">
+                        Alejandro <span class="text-gradient">Caballero Luque</span>
+                    </h1>
+                    <h2 class="hero-subtitle">Desarrollador Web Fullstack / Backend</h2>
+                    <p class="hero-description">
+                        Especializado en el desarrollo de arquitecturas robustas y escalables con <strong>PHP (Symfony, Laravel)</strong> y desarrollo frontend con <strong>React</strong>. Titulado en DAW con sólida experiencia en entornos de desarrollo ágiles y contenedorización con <strong>Docker</strong>.
+                    </p>
+                    
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">Contáctame</a>
+                        <a href="#projects" class="btn btn-secondary">Ver Proyectos</a>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/alejandro-caballero-luque" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                        <a href="mailto:alejandro.caballero.dev@gmail.com" class="social-link" title="Email">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                        </a>
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual fade-in-up delay-1">
+                    <!-- Interactive Developer Code Card -->
+                    <div class="code-card">
+                        <div class="code-card-header">
+                            <div class="code-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="code-card-title">AlejandroCaballero.php</span>
+                        </div>
+                        <div class="code-card-body">
+                            <pre><code><span class="keyword">namespace</span> App\Developer;
+
+<span class="keyword">class</span> <span class="class-name">AlejandroCaballero</span> <span class="keyword">extends</span> <span class="class-name">FullStackDeveloper</span>
+{
+    <span class="keyword">public</span> <span class="keyword">function</span> <span class="function-name">getProfile</span>(): <span class="type-hint">array</span>
+    {
+        <span class="keyword">return</span> [
+            <span class="string">'specialty'</span> => <span class="string">'Backend & Fullstack'</span>,
+            <span class="string">'primary_frameworks'</span> => [<span class="string">'Symfony'</span>, <span class="string">'Laravel'</span>],
+            <span class="string">'frontend_tech'</span> => [<span class="string">'React'</span>, <span class="string">'JavaScript'</span>],
+            <span class="string">'devops'</span> => [<span class="string">'Docker'</span>, <span class="string">'Makefile'</span>],
+            <span class="string">'location'</span> => <span class="string">'Córdoba, España'</span>,
+            <span class="string">'soft_skills'</span> => [
+                <span class="string">'ProblemSolving'</span>, 
+                <span class="string">'Autonomy'</span>,
+                <span class="string">'RapidLearningCurve'</span>
+            ]
+        ];
+    }
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section class="about-section section-padding" id="about">
+            <div class="container">
+                <div class="section-header text-center fade-in-up">
+                    <h2 class="section-title">Sobre Mí</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="about-grid fade-in-up">
+                    <div class="about-avatar-container">
+                        <div class="avatar-svg-wrapper">
+                            <img src="alejandro.jpg" alt="Alejandro Caballero Luque" class="avatar-img" id="avatar-img" onerror="this.style.display='none'; document.getElementById('avatar-placeholder').style.display='block';">
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <h3>Desarrollador Web Fullstack con enfoque Backend</h3>
+                        <p class="about-p">
+                            Soy un desarrollador web con una pasión por el backend bien estructurado y la automatización. Mi formación oficial como <strong>Técnico Superior en Desarrollo de Aplicaciones Web (DAW)</strong> me ha proporcionado bases sólidas en metodologías ágiles, bases de datos y arquitectura de software.
+                        </p>
+                        <p class="about-p">
+                            Destaco por mi capacidad para analizar y resolver problemas lógicos complejos, una rápida curva de aprendizaje al incorporar nuevas herramientas, y una total autonomía para trabajar con rigor técnico. Me siento muy cómodo configurando y optimizando entornos locales contenedorizados con Docker, garantizando un despliegue ágil desde el primer día.
+                        </p>
+                        
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <span class="highlight-num">+1 año</span>
+                                <span class="highlight-label">Formación y Prácticas Reales</span>
+                            </div>
+                            <div class="highlight-item">
+                                <span class="highlight-num">100%</span>
+                                <span class="highlight-label">Autonomía y Rigor</span>
+                            </div>
+                            <div class="highlight-item">
+                                <span class="highlight-num">PHP</span>
+                                <span class="highlight-label">Symfony & Laravel</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience-section section-padding bg-alt" id="experience">
+            <div class="container">
+                <div class="section-header text-center fade-in-up">
+                    <h2 class="section-title">Experiencia Laboral</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <!-- Tech Experience Timeline -->
+                <div class="timeline fade-in-up">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <span class="timeline-date">Feb 2026 - Jun 2026</span>
+                                <h3 class="timeline-title">Desarrollador Web Fullstack</h3>
+                                <h4 class="timeline-company">Studio 128k</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <ul>
+                                    <li><strong>Desarrollo de ERP:</strong> Análisis, diseño e implementación integral de un sistema de gestión interna mediante Symfony y Twig con total autonomía funcional.</li>
+                                    <li><strong>Integración de Módulos:</strong> Creación de componentes dinámicos integrando interfaces en React con lógica de negocio sólida en el backend con Symfony.</li>
+                                    <li><strong>Mantenimiento y DevOps:</strong> Corrección de bugs, optimización de código y gestión de entornos locales aislados con Docker y automatización mediante Makefile.</li>
+                                    <li><strong>Documentación:</strong> Redacción de especificaciones técnicas para el equipo de desarrollo y manuales de usuario funcionales para clientes finales.</li>
+                                </ul>
+                                <div class="timeline-tags">
+                                    <span class="tag">Symfony</span>
+                                    <span class="tag">Twig</span>
+                                    <span class="tag">React</span>
+                                    <span class="tag">Docker</span>
+                                    <span class="tag">Makefile</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <span class="timeline-date">Ene 2025 - Abr 2025</span>
+                                <h3 class="timeline-title">Desarrollador Web</h3>
+                                <h4 class="timeline-company">ABP Tecnológica</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <ul>
+                                    <li><strong>Desarrollo de Software:</strong> Diseño e implementación de un sistema de control horario automatizado utilizando el framework Laravel.</li>
+                                    <li><strong>Gestión de Bases de Datos:</strong> Planificación y ejecución de la migración completa de una base de datos relacional de MySQL a PostgreSQL, asegurando la integridad de la información.</li>
+                                </ul>
+                                <div class="timeline-tags">
+                                    <span class="tag">Laravel</span>
+                                    <span class="tag">PHP</span>
+                                    <span class="tag">MySQL</span>
+                                    <span class="tag">PostgreSQL</span>
+                                    <span class="tag">Migraciones</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="other-experience-wrapper fade-in-up">
+                    <button class="accordion-trigger" id="accordion-trigger">
+                        <span>Otras Experiencias Laborales (Camarero, Monitor)</span>
+                        <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                    </button>
+                    <div class="accordion-content" id="accordion-content">
+                        <div class="other-experience-grid">
+                            <div class="other-experience-card">
+                                <span class="card-date">Mar 2025 - Actualidad</span>
+                                <h4>Camarero</h4>
+                                <p class="company">La Cigala del Sur</p>
+                                <p class="desc">Desarrollo de habilidades de atención al cliente, gestión del estrés, resolución de conflictos y trabajo en equipo rápido bajo presión.</p>
+                            </div>
+                            <div class="other-experience-card">
+                                <span class="card-date">Oct 2018 - May 2024</span>
+                                <h4>Monitor de Judo</h4>
+                                <p class="company">CEIP Eduardo Lucena - CEIP Noreña</p>
+                                <p class="desc">Liderazgo de grupos, planificación de sesiones formativas, fomento de valores deportivos, autodisciplina y comunicación efectiva con niños y familias.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Stack Section -->
+        <section class="skills-section section-padding" id="skills">
+            <div class="container">
+                <div class="section-header text-center fade-in-up">
+                    <h2 class="section-title">Habilidades y Stack Técnico</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="skills-grid fade-in-up">
+                    <div class="skill-card">
+                        <div class="skill-card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10h16"></path><path d="M4 14h16"></path><rect width="20" height="12" x="2" y="6" rx="2"></rect></svg>
+                        </div>
+                        <h3>Backend</h3>
+                        <p class="skill-card-desc">Lógica de servidor robusta, APIs RESTful y patrones de diseño estructurados.</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">PHP (Laravel, Symfony)</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">Programación Orientada a Objetos</span>
+                            <span class="skill-tag">Patrón MVC</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M21 9H3"></path><path d="M21 15H3"></path><path d="M12 3v18"></path></svg>
+                        </div>
+                        <h3>Frontend</h3>
+                        <p class="skill-card-desc">Interfaces interactivas, semánticas y optimizadas para móviles.</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">JavaScript (ES6+)</span>
+                            <span class="skill-tag">Twig (Motor de plantillas)</span>
+                            <span class="skill-tag">HTML5 / CSS3 (Vanilla)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5V19A9 3 0 0 0 21 19V5"></path><path d="M3 12A9 3 0 0 0 21 12"></path></svg>
+                        </div>
+                        <h3>Bases de Datos & DevOps</h3>
+                        <p class="skill-card-desc">Contenedores aislados de desarrollo y gestión relacional de datos.</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">PostgreSQL & MySQL</span>
+                            <span class="skill-tag">Makefile (Automatización)</span>
+                            <span class="skill-tag">Git / GitHub</span>
+                            <span class="skill-tag">Postman (Testing API)</span>
+                            <span class="skill-tag">Linux / Servidores</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                        </div>
+                        <h3>Competencias Profesionales</h3>
+                        <p class="skill-card-desc">Habilidades metodológicas para la integración fluida en equipos ágiles.</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Autonomía operativa</span>
+                            <span class="skill-tag">Orientación al detalle</span>
+                            <span class="skill-tag">Resolución de problemas lógicos</span>
+                            <span class="skill-tag">Proactividad técnica</span>
+                            <span class="skill-tag">Orden metodológico</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section section-padding bg-alt" id="projects">
+            <div class="container">
+                <div class="section-header text-center fade-in-up">
+                    <h2 class="section-title">Proyectos Destacados</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">Una muestra de las soluciones técnicas que he desarrollado y plantillas de referencia.</p>
+                </div>
+                
+                <div class="projects-grid fade-in-up">
+                    <div class="project-card">
+                        <div class="project-card-image">
+                            <div class="project-visual bg-grad-purple">
+                                <span>&lt;Symfony / Twig / React&gt;</span>
+                            </div>
+                        </div>
+                        <div class="project-card-content">
+                            <span class="project-meta">Estudio 128k (Proyecto Real)</span>
+                            <h3>CoreERP - Módulo de Gestión Interna</h3>
+                            <p class="project-desc">Diseño e implementación integral de un sistema ERP de gestión empresarial interna. Creación de APIs robustas en Symfony y vistas dinámicas en React e integración clásica con Twig.</p>
+                            <div class="project-tags">
+                                <span class="tag">Symfony</span>
+                                <span class="tag">React</span>
+                                <span class="tag">Twig</span>
+                                <span class="tag">Docker</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-card-image">
+                            <div class="project-visual bg-grad-blue">
+                                <span>&lt;Laravel / PostgreSQL&gt;</span>
+                            </div>
+                        </div>
+                        <div class="project-card-content">
+                            <span class="project-meta">ABP Tecnológica (Proyecto Real)</span>
+                            <h3>TimeTrack - Registro Horario Automatizado</h3>
+                            <p class="project-desc">Diseño e implementación de un sistema de control horario de empleados. Desarrollo en Laravel y migración exitosa de MySQL a PostgreSQL, garantizando la consistencia e integridad de datos.</p>
+                            <div class="project-tags">
+                                <span class="tag">Laravel</span>
+                                <span class="tag">PHP</span>
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">DB Migration</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-card-image">
+                            <div class="project-visual bg-grad-green">
+                                <span>&lt;Docker / Makefile / Scripting&gt;</span>
+                            </div>
+                        </div>
+                        <div class="project-card-content">
+                            <span class="project-meta">Proyecto Personal / DevOps</span>
+                            <h3>Dockerized Local Stack Generator</h3>
+                            <p class="project-desc">Automatización de entornos locales para proyectos Symfony/Laravel. Genera con un solo comando en Makefile contenedores aislados con PHP-FPM, Nginx, PostgreSQL/MySQL y Redis listos para producción local.</p>
+                            <div class="project-tags">
+                                <span class="tag">Docker</span>
+                                <span class="tag">Makefile</span>
+                                <span class="tag">Nginx</span>
+                                <span class="tag">DevOps</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Info Section -->
+        <section class="education-section section-padding" id="education-info">
+            <div class="container">
+                <div class="education-grid">
+                    <div class="education-block fade-in-up">
+                        <h3 class="block-title">Formación Académica</h3>
+                        <div class="edu-card">
+                            <span class="edu-date">Sep 2024 - Jun 2026</span>
+                            <h4>Grado Superior en Desarrollo de Aplicaciones Web (DAW)</h4>
+                            <p class="edu-school">Davante-Medac Arena</p>
+                            <p class="edu-desc">Enfoque práctico en lenguajes estructurados y POO, bases de datos SQL y NoSQL, desarrollo frontend reactivo, diseño de APIs y despliegue continuo.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="additional-block fade-in-up delay-1">
+                        <h3 class="block-title">Idiomas y Cursos</h3>
+                        <div class="info-card">
+                            <h4>Idiomas</h4>
+                            <ul class="info-list">
+                                <li><strong>Español:</strong> Nativo</li>
+                                <li><strong>Inglés Técnico:</strong> Nivel fluido enfocado a la lectura, comprensión y consumo de documentación oficial, APIs y arquitecturas de software.</li>
+                            </ul>
+                            
+                            <h4 style="margin-top: 2rem;">Cursos y Otros Datos</h4>
+                            <ul class="info-list">
+                                <li>Cursos de especialización en <strong>OpenWebinars</strong> (Symfony Avanzado, Despliegue con Docker y Entornos Linux).</li>
+                                <li>Permiso de conducir B y vehículo propio.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section section-padding bg-alt" id="contact">
+            <div class="container">
+                <div class="section-header text-center fade-in-up">
+                    <h2 class="section-title">Contacto</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">¿Interesado en mi perfil? Estoy disponible para entrevistas y nuevos retos.</p>
+                </div>
+                
+                <div class="contact-grid fade-in-up">
+                    <div class="contact-info">
+                        <h3>¡Hablemos!</h3>
+                        <p>Escríbeme o llámame para concertar una entrevista. Responderé lo antes posible.</p>
+                        
+                        <div class="contact-details">
+                            <a href="mailto:alejandro.caballero.dev@gmail.com" class="contact-detail-item">
+                                <div class="icon-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                                </div>
+                                <div>
+                                    <span class="label">Email</span>
+                                    <span class="value">alejandro.caballero.dev@gmail.com</span>
+                                </div>
+                            </a>
+                            
+                            <a href="tel:+34744465630" class="contact-detail-item">
+                                <div class="icon-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                </div>
+                                <div>
+                                    <span class="label">Teléfono</span>
+                                    <span class="value">+34 744 46 56 30</span>
+                                </div>
+                            </a>
+                            
+                            <div class="contact-detail-item">
+                                <div class="icon-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                </div>
+                                <div>
+                                    <span class="label">Ubicación</span>
+                                    <span class="value">Córdoba, España</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container">
+                        <!-- Contact form integrated with Formspree service -->
+                        <form action="https://formspree.io/f/tu-id-formspree" method="POST" class="contact-form" id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Nombre Completo</label>
+                                <input type="text" id="name" name="name" required placeholder="Tu nombre y apellido">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Correo Electrónico</label>
+                                <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensaje</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Escribe tu propuesta o mensaje aquí..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Enviar Mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 Alejandro Caballero Luque. Desarrollado con HTML, CSS y JS.</p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/alejandro-caballero-luque" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="#hero">Volver Arriba</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script Imports -->
+    <script src="script.js"></script>
+</body>
+</html>
