@@ -47,27 +47,6 @@ Desarrollador Web Fullstack especializado en Backend (PHP, Symfony, Laravel). Ti
 *   **Grado Superior en Desarrollo de Aplicaciones Web (DAW)** | Davante-Medac Arena *(Sep 2024 - Jun 2026)*
 *   **Cursos de Especialización** | OpenWebinars: Symfony avanzado, despliegue con Docker y entornos Linux.
 
----
-
-## ⚙️ Personalización y Despliegue (Español)
-
-Este repositorio contiene el código fuente de mi portfolio web interactivo.
-
-### **Ejecución Local**
-1.  Clona este repositorio.
-2.  Abre [index.html](index.html) directamente en cualquier navegador, o arranca un servidor de desarrollo:
-    ```bash
-    npx serve .
-    ```
-
-### **Personalización**
-*   **Imagen de Perfil**: Guarda tu foto como `photo.jpg` en la carpeta raíz. El sitio la cargará automáticamente, mostrando un avatar vectorial de reserva si el archivo no existe.
-*   **Formulario de Contacto**: Registra un formulario gratis en [Formspree.io](https://formspree.io) y actualiza el ID del action en `index.html` (línea 504) con tu ID de Formspree.
-
-### **Despliegue Gratis**
-*   **GitHub Pages**: Sube el código a un repositorio llamado `tuusuario.github.io`.
-*   **Vercel**: Importa tu repositorio de GitHub en Vercel como proyecto estático.
-*   **Netlify**: Arrastra la carpeta del proyecto directamente a la interfaz web de Netlify.
 
 ---
 ---
@@ -106,25 +85,3 @@ Fullstack Web Developer specialized in Backend development (PHP, Symfony, Larave
 ## 🎓 Education & Training
 *   **Higher Technical Degree in Web Application Development (DAW)** | Davante-Medac Arena *(Sep 2024 - Jun 2026)*
 *   **Specialization Courses** | OpenWebinars: Advanced Symfony, Deployment with Docker, and Linux Environments.
-
----
-
-## ⚙️ Project Setup & Deployment (English)
-
-This repository contains the source code for my interactive web portfolio.
-
-### **Local Setup**
-1.  Clone this repository.
-2.  Open [index.html](index.html) directly in any web browser, or run a local server:
-    ```bash
-    npx serve .
-    ```
-
-### **Customization**
-*   **Profile Picture**: Drop your photo as `photo.jpg` in the root folder. The portfolio will automatically detect and load it, falling back to a custom vector avatar if not found.
-*   **Contact Form**: Create a free form at [Formspree.io](https://formspree.io) and replace the action URL in `index.html` (line 504) with your Formspree form ID.
-
-### **Free Hosting Deployment**
-*   **GitHub Pages**: Push this code to a repository named `yourusername.github.io`.
-*   **Vercel**: Import the GitHub repo into Vercel as a static project.
-*   **Netlify**: Drag and drop this folder directly into the Netlify dashboard.
